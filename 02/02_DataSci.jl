@@ -46,5 +46,3 @@ end
 # Histogram on Group1 -> seems to be industry/field
 myplot = plot(museumItemsDFCleaned, x=19, Geom.histogram, Guide.xlabel("Industry"), Guide.ylabel("Frequency"), Guide.title("Canadian Museum Items - Frequency of Category"))
 draw(PNG("02_DataSci_CNDmuseumhist.png", 4inch, 6inch), myplot)
-
-df = DataFrame(A = 1:5, B = 6:10, C = 11:15); names!(df, reverse(names(df)))
