@@ -44,5 +44,7 @@ for i in 1:size(museumItemsDF)[1]
 end
 
 # Histogram on Group1 -> seems to be industry/field
-myplot = plot(museumItemsDFCleaned, x=19, Geom.histogram, Guide.xlabel("Industry"), Guide.ylabel("Frequency"), Guide.title("Canadian Museum Items - Frequency of Category"))
+myplot = plot(museumItemsDFCleaned, x=19, Geom.histogram, Guide.xlabel("Industry"),
+            Guide.ylabel("Frequency"),
+            Guide.title("Canadian Museum Items - Frequency of Category"))
 draw(PNG("02_DataSci_CNDmuseumhist.png", 4inch, 6inch), myplot)
